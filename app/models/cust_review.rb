@@ -6,7 +6,7 @@ def initialize(review, restaurant, rating)
     @review = review
     @restaurant = restaurant
     @rating = rating
-    @@all << self
+    CustRev.all << self
 end
 
 def self.all

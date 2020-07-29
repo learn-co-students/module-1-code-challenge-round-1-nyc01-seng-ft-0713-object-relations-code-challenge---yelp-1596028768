@@ -34,11 +34,13 @@ class Customer
   end
 
   def self.find_by_name(name)
-    customer = self.all.find{|name| name.full_name.include?(name)}
-    customer.full_name  
+    self.all.find(name){|customer|customer.full_name == name}
   end
 
   def self.find_all_by_given_name
-
+    self.all.select.{|customer|customer.given_name == name}
   end
+
 end
+
+

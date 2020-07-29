@@ -27,4 +27,16 @@ class Customer
   def resturants
     Customer.all.map { |review| review.customer == self}.uniq
   end 
+
+  def add_review(restaurant, rating)
+    review.new == self.restaurants
+  end
+  
+  def num_reviews
+    self.all.review
+  end 
+
+  def find_all_by_given_name(name)
+    self.all.map { |name| name == self }
+  end 
 end

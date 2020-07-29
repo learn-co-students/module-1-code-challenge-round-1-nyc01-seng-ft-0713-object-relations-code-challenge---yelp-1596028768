@@ -8,6 +8,7 @@ class Restaurant
   def self.all
     @@all
   end
+
   def name
     @name
   end
@@ -23,9 +24,7 @@ class Restaurant
 
 
 
-  def self.average_star_rating
-    self.all. do |rest|
-        rest.rating
-    end
+  def average_star_rating
+    self.all.count do |
 end
 end

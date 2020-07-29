@@ -18,7 +18,13 @@ end
   end 
 
   def customer
-    Customer.all.filter do |customer|
+    self.all.filter do |customer|
         customer.review == self 
     end
+
+    def restaurants
+        Reviews.all.map do |restaurant|
+            resturant.reviews  
+        end 
+
 end

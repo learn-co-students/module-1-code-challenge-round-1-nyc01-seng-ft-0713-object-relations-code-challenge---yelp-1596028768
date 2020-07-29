@@ -34,7 +34,7 @@ class Customer
   end
 
   def self.find_by_name(name)
-    customer = self.all.find { |name| name.full_name.include?(name)}
+    customer = self.all.find{|name| name.full_name.include?(name)}
     customer.full_name  
   end
 
